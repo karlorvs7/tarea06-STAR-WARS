@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+       <div id="cabecera">
+            <div>
+            <h3>Personajes</h3>
+            <h3>Naves</h3>
+            <h3>Contacto</h3>
+            </div>
+         </div>
+        <div id="menu">
+        <h1>DOMINANDO LA FUERZA DEL CSS</h1>
+        <p>Posicionamiento, Filtros y  Transformaciones</p>
+        </div>
+        <div class="cuadrados">
+           <div class="cuadrado j">
+                 <div class="contenedorimagen">
+                   <img src="imagenes/images (1).jpg" alt="">
+                  <span class="etiqueta jedi">JEDI</span> </div>
+                  <div class="texto">
+                 <h3>Luke Skywalker</h3>
+                 <p>El ultimo caballero Jedi</p>
+                 </div>
+            </div>
+            <div class="cuadrado s">
+                  <div class="contenedorimagen">
+                    <img src="imagenes/darth-vader-star-wars-Obi-Wan-Kenobi.jpg" alt="">
+                    <span class="etiqueta vader">SITH</span></div>
+                    <div class="texto">
+                   <h3>Darth Vader</h3>
+                    <p>Señor oscuro del imperio</p>
+                    </div>
+            </div>
+         </div>
+
+
+    
+    <button id="boton" onclick="deslizar()"><i class="fa-brands fa-mandalorian"></i></button>
+
+    <script>function deslizar() { window.scrollTo({top: 0, behavior: "smooth"});}</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(26, 24, 24);
+    
+}
+#cabecera{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+html{
+  scroll-behavior: smooth;
+}
+#cabecera div{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(236, 179, 32);
+    padding: 13px;
+    gap: 40px;
+    font-size: 20px;
+}
+#cabecera h3:hover{
+    color: white;
+    cursor: pointer;
+}
+#menu{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 60px 0 180px 0;
+}
+#menu h1{
+    font-size: 45px;
+}
+#menu p{
+    font-size: 20px;
+}
+.cuadrados{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding-top: 150px;
+    padding-bottom: 70px; 
+}
+.cuadrado{
+    background-color: #2a333f;
+    width: 360px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contenedorimagen{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+p{
+    padding: 6%;
+}
+.cuadrado.j:hover{
+    box-shadow: 0 10px 40px rgb(247, 232, 25);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    aspect-ratio: 16/9;
+    
+}
+.cuadrado.s:hover{
+    box-shadow: 0 10px 40px rgb(252, 0, 0);
+    transform: translateY(-5px);
+    transition: 0.3s;
+    aspect-ratio: 16/9;
+}
+.cuadrado.j img, .cuadrado.s img{
+    filter: grayscale(80%);
+}
+.cuadrado.j:hover img, .cuadrado.s:hover img{
+    filter: grayscale(0%);
+}
+.contenedorimagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.etiqueta{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.jedi{
+    background-color: rgb(14, 220, 235);
+}
+.vader{
+    background-color: red;
+}
+.texto{
+    padding: 40px; color: white;
+}
+.texto p{
+    color: #a3b9d6; margin-top: 6px; font-size: 22px; padding: 13px;
+}
+#boton{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e6b422;
+  color: black;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
